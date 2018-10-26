@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6AB4848821818B220056EB75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4848721818B220056EB75 /* Foundation.framework */; };
+		6AB4849021818B220056EB75 /* HookMyApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4848F21818B220056EB75 /* HookMyApp.mm */; };
+		6AB4849D21818B940056EB75 /* MyMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4849B21818B940056EB75 /* MyMain.m */; };
+		6AB4849F21818CD90056EB75 /* CydiaSubstrate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB4849E21818CD90056EB75 /* CydiaSubstrate.framework */; };
+		6AB484A121818D7D0056EB75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB484A021818D7D0056EB75 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6AB4848421818B220056EB75 /* HookMyApp.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = HookMyApp.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB4848721818B220056EB75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6AB4848C21818B220056EB75 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		6AB4848E21818B220056EB75 /* HookMyApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HookMyApp-Prefix.pch"; sourceTree = "<group>"; };
+		6AB4848F21818B220056EB75 /* HookMyApp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HookMyApp.mm; sourceTree = "<group>"; };
+		6AB4849421818B220056EB75 /* HookMyApp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HookMyApp.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HookMyApp.plist; sourceTree = "<group>"; };
+		6AB4849B21818B940056EB75 /* MyMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyMain.m; sourceTree = "<group>"; };
+		6AB4849E21818CD90056EB75 /* CydiaSubstrate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CydiaSubstrate.framework; sourceTree = "<group>"; };
+		6AB484A021818D7D0056EB75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB4848021818B220056EB75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB484A121818D7D0056EB75 /* UIKit.framework in Frameworks */,
+				6AB4848821818B220056EB75 /* Foundation.framework in Frameworks */,
+				6AB4849F21818CD90056EB75 /* CydiaSubstrate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AB4847A21818B220056EB75 = {
+			isa = PBXGroup;
+			children = (
+				6AB4848921818B220056EB75 /* HookMyApp */,
+				6AB4848621818B220056EB75 /* Frameworks */,
+				6AB4848521818B220056EB75 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB4848521818B220056EB75 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4848421818B220056EB75 /* HookMyApp.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AB4848621818B220056EB75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AB484A021818D7D0056EB75 /* UIKit.framework */,
+				6AB4848721818B220056EB75 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AB4848921818B220056EB75 /* HookMyApp */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4849E21818CD90056EB75 /* CydiaSubstrate.framework */,
+				6AB4849B21818B940056EB75 /* MyMain.m */,
+				6AB4848F21818B220056EB75 /* HookMyApp.mm */,
+				6AB4848A21818B220056EB75 /* Package */,
+				6AB4848D21818B220056EB75 /* Supporting Files */,
+			);
+			path = HookMyApp;
+			sourceTree = "<group>";
+		};
+		6AB4848A21818B220056EB75 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4848B21818B220056EB75 /* DEBIAN */,
+				6AB4849121818B220056EB75 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		6AB4848B21818B220056EB75 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4848C21818B220056EB75 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		6AB4848D21818B220056EB75 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4848E21818B220056EB75 /* HookMyApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AB4849121818B220056EB75 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4849221818B220056EB75 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		6AB4849221818B220056EB75 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4849321818B220056EB75 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		6AB4849321818B220056EB75 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4849421818B220056EB75 /* HookMyApp.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6AB4848121818B220056EB75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6AB4848321818B220056EB75 /* HookMyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB4849721818B220056EB75 /* Build configuration list for PBXNativeTarget "HookMyApp" */;
+			buildPhases = (
+				6AB4847F21818B220056EB75 /* Sources */,
+				6AB4848021818B220056EB75 /* Frameworks */,
+				6AB4848121818B220056EB75 /* Headers */,
+				6AB4848221818B220056EB75 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HookMyApp;
+			productName = HookMyApp;
+			productReference = 6AB4848421818B220056EB75 /* HookMyApp.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AB4847B21818B220056EB75 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				TargetAttributes = {
+					6AB4848321818B220056EB75 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 6AB4847E21818B220056EB75 /* Build configuration list for PBXProject "HookMyApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6AB4847A21818B220056EB75;
+			productRefGroup = 6AB4848521818B220056EB75 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AB4848321818B220056EB75 /* HookMyApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6AB4848221818B220056EB75 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AB4847F21818B220056EB75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB4849021818B220056EB75 /* HookMyApp.mm in Sources */,
+				6AB4849D21818B940056EB75 /* MyMain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6AB4849521818B220056EB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"HookMyApp\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AB4849621818B220056EB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"HookMyApp\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		6AB4849821818B220056EB75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PXFJL735S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HookMyApp",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HookMyApp/HookMyApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 10086;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6AB4849921818B220056EB75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4PXFJL735S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HookMyApp",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HookMyApp/HookMyApp-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 10086;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AB4847E21818B220056EB75 /* Build configuration list for PBXProject "HookMyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB4849521818B220056EB75 /* Release */,
+				6AB4849621818B220056EB75 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB4849721818B220056EB75 /* Build configuration list for PBXNativeTarget "HookMyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB4849821818B220056EB75 /* Release */,
+				6AB4849921818B220056EB75 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AB4847B21818B220056EB75 /* Project object */;
+}
